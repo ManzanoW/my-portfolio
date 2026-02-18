@@ -13,6 +13,6 @@ export const projects = [
             'Este próprio portfólio, construído com Next.js, TypeScript e Tailwind CSS.',
         techs: ['Next.js', 'TypeScript', 'Tailwind CSS'],
         liveUrl: 'https://seu-portfolio.vercel.app',
-        codeUrl: 'https://github.com/seu-usuario/portfolio-next',
+        codeUrl: 'https://github.com/ManzanoW/my-portfolio',
     },
 ]
