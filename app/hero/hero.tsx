@@ -16,8 +16,8 @@ export function Hero() {
                         Desenvolvedor web
                     </p>
                     <h1 className='text-4xl font-bold md:text-5xl'>
-                        Olá, eu sou o{' '}
-                        <span className='text-sky-400'>João Vytor</span>
+                        Olá, eu sou o {''} <br />
+                        <span className='text-sky-400'>{''}João Vytor</span>
                     </h1>
                     <p className='max-w-xl text-slate-300'>
                         Construo aplicações web modernas usando React, Next.js e
@@ -27,13 +27,13 @@ export function Hero() {
                     <div className='mt-6 flex gap-4'>
                         <button
                             onClick={() => handleScroll('projects')}
-                            className='rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400'
+                            className='cursor-pointer rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400'
                         >
                             Ver projetos
                         </button>
                         <button
                             onClick={() => handleScroll('contact')}
-                            className='rounded-md border border-slate-600 px-4 py-2 text-sm font-medium transition hover:border-sky-400 hover:text-sky-400'
+                            className='cursor-pointer rounded-md border border-slate-600 px-4 py-2 text-sm font-medium transition hover:border-sky-400 hover:text-sky-400'
                         >
                             Fale comigo
                         </button>

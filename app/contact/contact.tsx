@@ -48,7 +48,7 @@ export function Contact() {
                 </div>
                 <button
                     type='submit'
-                    className='rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400'
+                    className='cursor-pointer rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400'
                 >
                     Enviar
                 </button>

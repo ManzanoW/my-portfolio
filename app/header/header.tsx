@@ -28,7 +28,7 @@ export function Header() {
                         <li key={s.id}>
                             <button
                                 onClick={() => handleScroll(s.id)}
-                                className='text-slate-300 transition hover:text-sky-400'
+                                className='cursor-pointer text-slate-300 transition hover:text-sky-400'
                             >
                                 {s.label}
                             </button>
