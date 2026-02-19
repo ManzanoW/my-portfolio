@@ -13,7 +13,7 @@ export function Hero() {
                 {/* COLUNA TEXTO */}
                 <div className='flex-1 space-y-4'>
                     <p className='text-sm tracking-[0.2em] text-sky-400 uppercase'>
-                        Desenvolvedor web
+                        Desenvolvedor Full-Stack
                     </p>
                     <h1 className='text-4xl font-bold md:text-5xl'>
                         Olá, eu sou o {''} <br />
