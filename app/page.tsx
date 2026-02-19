@@ -1,15 +1,16 @@
 'use client'
 
-import { Header } from './header/header'
-import { Hero } from './hero/hero'
-import { About } from './about/about'
-import { Skills } from './skills/skills'
-import { Projects } from './projects/projects'
-import { Contact } from './contact/contact'
+import { Header } from './header/Header'
+import { Hero } from './hero/Hero'
+import { About } from './about/About'
+import { Skills } from './skills/Skills'
+import { Projects } from './projects/Projects'
+import { Contact } from './contact/Contact'
+import { Education } from './education/Education'
 
 export default function Home() {
     return (
-        <div className='bg-slate-950 text-slate-300 no'>
+        <div className='no bg-slate-950 text-slate-300'>
             <Header />
             <main className='no-scrollbar mx-auto max-w-5xl px-4'>
                 <section id='home' className='flex min-h-screen items-center'>
@@ -23,6 +24,9 @@ export default function Home() {
                 </section>
                 <section id='projects' className='py-20'>
                     <Projects />
+                </section>
+                <section id='education' className='py-20'>
+                    <Education />
                 </section>
                 <section id='contact' className='py-20 pb-32'>
                     <Contact />
