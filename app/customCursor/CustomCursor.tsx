@@ -4,12 +4,12 @@ import { useEffect } from 'react'
 
 export function CustomCursor() {
     useEffect(() => {
-        // roda só no client
+        // só ativa em devices com mouse/hover
         const canHover =
             window.matchMedia &&
             window.matchMedia('(hover: hover) and (pointer: fine)').matches
 
-        if (!canHover) return // em mobile/tablet não faz nada
+        if (!canHover) return
 
         const cursor = document.querySelector(
             '.custom-cursor'
@@ -22,12 +22,18 @@ export function CustomCursor() {
         const move = (e: PointerEvent) => {
             cursor.style.left = `${e.clientX - radius}px`
             cursor.style.top = `${e.clientY - radius}px`
+
+            const target = e.target as HTMLElement | null
+            const isClickable = !!target?.closest(
+                "button, a, [role='button'], [data-clickable='true']"
+            )
+
+            cursor.classList.toggle('custom-cursor--pointer', isClickable)
         }
 
         window.addEventListener('pointermove', move)
         return () => window.removeEventListener('pointermove', move)
     }, [])
 
-    // o elemento existe sempre, mas só é usado no desktop
     return <div className='custom-cursor' />
 }
