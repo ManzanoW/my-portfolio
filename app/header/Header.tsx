@@ -20,14 +20,14 @@ export function Header() {
 
     return (
         <header className='sticky top-0 z-20 border-b border-slate-800 bg-slate-950/80 backdrop-blur'>
-            <nav className='mx-auto flex max-w-5xl items-center justify-between px-4 py-3'>
+            <nav className='mx-auto flex max-w-5xl items-center justify-between px-4 py-2 sm:px-6 sm:py-3'>
                 <Link
                     href='#home'
-                    className='cursor-none text-lg font-semibold'
+                    className='cursor-none text-base font-semibold sm:text-lg'
                 >
                     JV.dev
                 </Link>
-                <ul className='flex gap-4 text-sm'>
+                <ul className='flex flex-wrap justify-end gap-2 text-xs sm:flex-nowrap sm:gap-4 sm:text-sm'>
                     {sections.map((s) => (
                         <li key={s.id}>
                             <button
