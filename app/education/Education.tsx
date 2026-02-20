@@ -9,7 +9,7 @@ export function Education() {
                 {education.map((item) => (
                     <div
                         key={item.degree + item.institution}
-                        className='border-l border-slate-700 pl-4'
+                        className='border-l border-slate-700 py-2 pl-4 transition hover:border-sky-500 hover:bg-slate-900/40 hover:shadow-md hover:shadow-sky-500/20'
                     >
                         <p className='text-sm text-sky-400'>{item.period}</p>
 
