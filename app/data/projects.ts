@@ -4,7 +4,7 @@ export const projects = [
         description:
             'Aplicação web para gestão de consultas de saúde, com login, dashboard e agendamento.',
         techs: ['React', 'React Router', 'localStorage'],
-        liveUrl: 'https://seu-link-vitawave.com',
+        liveUrl: 'https://vita-wave.vercel.app/',
         codeUrl: 'https://github.com/ManzanoW/VitaWave',
     },
     {
