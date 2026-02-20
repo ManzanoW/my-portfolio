@@ -11,7 +11,7 @@ export function Hero() {
         <section id='home' className='flex min-h-screen items-center'>
             <div className='flex w-full flex-col gap-10 md:flex-row md:items-center'>
                 {/* COLUNA TEXTO */}
-                <div className='flex-1 space-y-4'>
+                <div className='z-1 flex-1 space-y-4'>
                     <p className='text-sm tracking-[0.2em] text-sky-400 uppercase'>
                         Desenvolvedor Full-Stack
                     </p>

@@ -28,5 +28,5 @@ export function CustomCursor() {
         return () => window.removeEventListener('pointermove', move)
     }, [])
 
-    return <div className='custom-cursor' />
+    return <div className='custom-cursor z-0' />
 }

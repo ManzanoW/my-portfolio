@@ -63,7 +63,7 @@ export function Contact() {
                         id='name'
                         name='name'
                         required
-                        className='w-full cursor-none rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 transition hover:border-slate-500 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:outline-none'
+                        className='z-1 w-full cursor-none rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 transition hover:border-slate-500 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:outline-none'
                     />
                 </div>
 

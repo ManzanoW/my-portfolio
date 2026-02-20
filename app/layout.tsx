@@ -21,17 +21,17 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
     children,
-}: Readonly<{
+}: {
     children: React.ReactNode
-}>) {
+}) {
     return (
-        <html lang='en'>
+        <html lang='pt-BR'>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} bg-slate-950 text-slate-100 antialiased`}
             >
                 <CustomCursor />
                 <PageGlow />
-                {children}
+                <div className='relative z-10'>{children}</div>
             </body>
         </html>
     )

@@ -10,7 +10,7 @@ import { Education } from './education/Education'
 
 export default function Home() {
     return (
-        <div className='no bg-slate-950 text-slate-300'>
+        <div>
             <Header />
             <main className='no-scrollbar mx-auto max-w-5xl px-4'>
                 <section id='home' className='flex min-h-screen items-center'>

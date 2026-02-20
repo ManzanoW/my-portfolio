@@ -8,7 +8,7 @@ export function Projects() {
                 {projects.map((p) => (
                     <article
                         key={p.title}
-                        className='rounded-lg border border-slate-800 bg-slate-900/60 p-4 transition hover:border-sky-500'
+                        className='rounded-lg border border-slate-800 bg-slate-900/60 p-4 transition hover:border-sky-500s'
                     >
                         <h3 className='text-lg font-semibold'>{p.title}</h3>
                         <p className='mt-2 text-sm text-slate-300'>
