@@ -109,7 +109,7 @@ export function Contact() {
                 <button
                     type='submit'
                     disabled={isSending}
-                    className='cursor-pointer rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400 disabled:cursor-not-allowed disabled:opacity-60'
+                    className='cursor-none rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400 disabled:cursor-not-allowed disabled:opacity-60'
                 >
                     {isSending ? 'Enviando...' : 'Enviar'}
                 </button>

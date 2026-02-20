@@ -27,13 +27,13 @@ export function Hero() {
                     <div className='mt-6 flex gap-4'>
                         <button
                             onClick={() => handleScroll('projects')}
-                            className='cursor-pointer rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400'
+                            className='cursor-none rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 transition hover:bg-sky-400'
                         >
                             Ver projetos
                         </button>
                         <button
                             onClick={() => handleScroll('contact')}
-                            className='cursor-pointer rounded-md border border-slate-600 px-4 py-2 text-sm font-medium transition hover:border-sky-400 hover:text-sky-400'
+                            className='cursor-none rounded-md border border-slate-600 px-4 py-2 text-sm font-medium transition hover:border-sky-400 hover:text-sky-400'
                         >
                             Fale comigo
                         </button>
