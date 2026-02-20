@@ -54,7 +54,7 @@ export function Contact() {
             <form onSubmit={handleSubmit} className='space-y-4'>
                 <div>
                     <label
-                        className='mb-1 block text-sm text-slate-300'
+                        className='mb-1 block cursor-none text-sm text-slate-300'
                         htmlFor='name'
                     >
                         Nome
@@ -63,13 +63,13 @@ export function Contact() {
                         id='name'
                         name='name'
                         required
-                        className='w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm focus:border-sky-500 focus:outline-none'
+                        className='w-full cursor-none rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 transition hover:border-slate-500 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:outline-none'
                     />
                 </div>
 
                 <div>
                     <label
-                        className='mb-1 block text-sm text-slate-300'
+                        className='mb-1 block cursor-none text-sm text-slate-300'
                         htmlFor='email'
                     >
                         E-mail
@@ -79,13 +79,13 @@ export function Contact() {
                         name='email'
                         type='email'
                         required
-                        className='w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm focus:border-sky-500 focus:outline-none'
+                        className='w-full cursor-none rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 transition hover:border-slate-500 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:outline-none'
                     />
                 </div>
 
                 <div>
                     <label
-                        className='mb-1 block text-sm text-slate-300'
+                        className='mb-1 block cursor-none text-sm text-slate-300'
                         htmlFor='message'
                     >
                         Mensagem
@@ -95,7 +95,7 @@ export function Contact() {
                         name='message'
                         rows={4}
                         required
-                        className='w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm focus:border-sky-500 focus:outline-none'
+                        className='w-full cursor-none rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 transition hover:border-slate-500 focus:border-sky-500 focus:ring-1 focus:ring-sky-500 focus:outline-none'
                     />
                 </div>
 
