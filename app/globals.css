@@ -22,7 +22,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     cursor: none;
-    touch-action: manipulation;
 }
 
 @layer utilities {
@@ -53,19 +52,22 @@ body {
         background-color: transparent;
         pointer-events: none;
         z-index: 50;
-        /* começa invisível até ter a primeira posição */
-        opacity: 0;
-        transform: translate3d(0, 0, 0);
         transition:
             border-color 120ms ease-out,
             background-color 120ms ease-out,
-            transform 120ms ease-out,
-            opacity 120ms ease-out;
+            transform 120ms ease-out;
     }
 
     .custom-cursor--pointer {
         border-color: #0ea5e9; /* sky-500 */
-        background-color: rgba(15, 23, 42, 0.85);
+        background-color: rgba(15, 23, 42, 0.85); /* fundo escuro por trás */
         transform: scale(1.25);
+    }
+}
+
+/* mobile / dispositivos sem hover: esconde */
+@media (hover: none), (pointer: coarse) {
+    .custom-cursor {
+        display: none;
     }
 }
