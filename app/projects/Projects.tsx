@@ -29,7 +29,7 @@ export function Projects() {
                                 <a
                                     href={p.liveUrl}
                                     target='_blank'
-                                    className='text-sky-400 hover:underline'
+                                    className='cursor-none text-sky-400 hover:underline'
                                 >
                                     Live
                                 </a>
@@ -38,7 +38,7 @@ export function Projects() {
                                 <a
                                     href={p.codeUrl}
                                     target='_blank'
-                                    className='text-slate-300 hover:underline'
+                                    className='cursor-none text-slate-300 hover:underline'
                                 >
                                     Código
                                 </a>
