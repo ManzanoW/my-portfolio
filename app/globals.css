@@ -26,14 +26,21 @@ body {
 }
 
 @layer utilities {
-    /* Chrome, Safari, Opera */
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
+    .page-glow {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0; /* abaixo do conteúdo principal */
+        opacity: 0;
+        background: radial-gradient(
+            circle at var(--glow-x, 50%) var(--glow-y, 50%),
+            rgba(56, 189, 248, 0.12),
+            transparent 8%
+        );
+        transition: opacity 150ms ease-out;
     }
 
-    /* Firefox, Edge, etc. */
-    .no-scrollbar {
-        -ms-overflow-style: none; /* IE e Edge */
-        scrollbar-width: none; /* Firefox */
+    .page-glow--active {
+        opacity: 1;
     }
 }
