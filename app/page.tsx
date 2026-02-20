@@ -7,6 +7,7 @@ import { Skills } from './skills/Skills'
 import { Projects } from './projects/Projects'
 import { Contact } from './contact/Contact'
 import { Education } from './education/Education'
+import { DownloadCVButton } from './downloadCVButton/DownloadCVButton'
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
                 <section id='home' className='flex min-h-screen items-center'>
                     <Hero />
                 </section>
+                <DownloadCVButton />
                 <section id='about' className='py-20'>
                     <About />
                 </section>
