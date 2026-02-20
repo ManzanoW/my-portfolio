@@ -42,7 +42,7 @@ export function Hero() {
 
                 {/* COLUNA IMAGEM */}
                 <div className='flex flex-1 justify-center max-[768px]:hidden md:justify-end'>
-                    <div className='relative h-64 w-64 md:h-80 md:w-80'>
+                    <div className='relative h-64 w-64 select-none md:h-80 md:w-80'>
                         <div className='absolute inset-0 rounded-full bg-linear-to-tr from-sky-500 via-purple-500 to-amber-400 opacity-70 blur-2xl' />
                         <Image
                             src='/me-nobg.png'
