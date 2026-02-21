@@ -8,18 +8,18 @@ export function Hero() {
     }
 
     return (
-        <section id='home' className='flex min-h-screen items-center'>
+        <section id='home' className='flex min-h-screen items-center pt-8'>
             <div className='flex w-full flex-col gap-10 md:flex-row md:items-center'>
                 {/* COLUNA TEXTO */}
                 <div className='z-1 flex-1 space-y-4'>
-                    <p className='text-sm tracking-[0.2em] text-sky-400 uppercase'>
+                    <p className='text-xs tracking-[0.25em] text-sky-400 uppercase'>
                         Desenvolvedor Full-Stack
                     </p>
-                    <h1 className='text-4xl font-bold md:text-5xl'>
+                    <h1 className='text-4xl leading-tight font-bold md:text-5xl'>
                         Olá, eu sou o {''} <br />
                         <span className='text-sky-400'>{''}João Vytor</span>
                     </h1>
-                    <p className='max-w-xl text-slate-300'>
+                    <p className='max-w-xl text-sm text-slate-300 md:text-base'>
                         Construo aplicações web modernas usando React, Next.js e
                         TypeScript, focando em performance e boa experiência de
                         usuário.
@@ -43,7 +43,7 @@ export function Hero() {
                 {/* COLUNA IMAGEM */}
                 <div className='flex flex-1 justify-center max-[768px]:hidden md:justify-end'>
                     <div className='relative h-64 w-64 select-none md:h-80 md:w-80'>
-                        <div className='absolute inset-0 rounded-full bg-linear-to-tr from-sky-500 via-purple-500 to-amber-400 opacity-70 blur-2xl' />
+                        <div className='absolute inset-0 rounded-full bg-linear-to-tr from-sky-500 via-purple-500 to-amber-400 opacity-60 blur-2xl' />
                         <Image
                             src='/me-nobg.png'
                             alt='Foto de João Vytor, desenvolvedor'
