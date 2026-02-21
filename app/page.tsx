@@ -8,6 +8,7 @@ import { Projects } from './projects/Projects'
 import { Contact } from './contact/Contact'
 import { Education } from './education/Education'
 import { DownloadCVButton } from './downloadCVButton/DownloadCVButton'
+import { Experience } from './experience/Experience'
 
 export default function Home() {
     return (
@@ -26,6 +27,9 @@ export default function Home() {
                 </section>
                 <section id='projects' className='py-20'>
                     <Projects />
+                </section>
+                <section id='experience' className='py-20'>
+                    <Experience />
                 </section>
                 <section id='education' className='py-20'>
                     <Education />
