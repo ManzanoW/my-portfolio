@@ -40,7 +40,7 @@ export function Projects() {
                                     target='_blank'
                                     className='cursor-none text-slate-300 hover:underline'
                                 >
-                                    Ver Código 
+                                    Ver Código
                                 </a>
                             )}
                         </div>
