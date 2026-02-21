@@ -8,7 +8,7 @@ const footerLinks = [
     },
     {
         label: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/joaovytormanzano',
+        href: 'https://www.linkedin.com/in/joao-vytor',
         icon: FaLinkedin,
     },
     {
