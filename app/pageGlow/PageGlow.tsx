@@ -16,5 +16,5 @@ export function PageGlow() {
         return () => window.removeEventListener('pointermove', handleMove)
     }, [])
 
-    return <div className='page-glow page-glow--active' />
+    return <div className='page-glow page-glow--active hidden sm:block' />
 }
