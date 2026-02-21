@@ -44,7 +44,7 @@ export function Contact() {
     }
 
     return (
-        <div className='max-w-xl'>
+        <div className='max-w-xl rounded-md border border-slate-700 bg-slate-900/60 p-6'>
             <h2 className='mb-4 text-2xl font-semibold'>Contato</h2>
             <p className='mb-6 text-slate-300'>
                 Quer conversar sobre vagas, freelas ou projetos? Me manda uma
