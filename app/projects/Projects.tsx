@@ -31,7 +31,7 @@ export function Projects() {
                                     target='_blank'
                                     className='cursor-none text-sky-400 hover:underline'
                                 >
-                                    Live
+                                    Ver Projeto
                                 </a>
                             )}
                             {p.codeUrl && (
@@ -40,7 +40,7 @@ export function Projects() {
                                     target='_blank'
                                     className='cursor-none text-slate-300 hover:underline'
                                 >
-                                    Código
+                                    Ver Código 
                                 </a>
                             )}
                         </div>
