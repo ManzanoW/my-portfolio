@@ -9,6 +9,7 @@ import { Contact } from './contact/Contact'
 import { Education } from './education/Education'
 import { DownloadCVButton } from './downloadCVButton/DownloadCVButton'
 import { Experience } from './experience/Experience'
+import { Footer } from './footer/Footer'
 
 export default function Home() {
     return (
@@ -36,6 +37,9 @@ export default function Home() {
                 </section>
                 <section id='contact' className='py-20 pb-32'>
                     <Contact />
+                </section>
+                <section className='py-20'>
+                    <Footer />
                 </section>
             </main>
         </div>
