@@ -10,6 +10,7 @@ import { Education } from './education/Education'
 import { DownloadCVButton } from './downloadCVButton/DownloadCVButton'
 import { Experience } from './experience/Experience'
 import { Footer } from './footer/Footer'
+import { LearningRoadmap } from './learningRoadmap/LearningRoadmap'
 
 export default function Home() {
     return (
@@ -25,6 +26,9 @@ export default function Home() {
                 </section>
                 <section id='skills' className='py-20'>
                     <Skills />
+                </section>
+                <section id='learning-roadmap' className='py-20'>
+                    <LearningRoadmap />
                 </section>
                 <section id='projects' className='py-20'>
                     <Projects />
