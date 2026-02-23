@@ -44,7 +44,7 @@ export function Contact() {
     }
 
     return (
-        <div className='max-w-xl rounded-md border border-slate-700 bg-slate-900/60 p-6 transition-colors hover:border-sky-500 hover:bg-slate-900/80'>
+        <div className='max-w-xl rounded-md border border-slate-700 bg-slate-900/60 p-6 transition-shadow duration-300 hover:shadow-lg hover:shadow-sky-500/50'>
             <h2 className='mb-2 text-2xl font-semibold'>Contato</h2>
             <p className='mb-6 text-sm text-slate-300'>
                 Quer conversar sobre vagas, freelas ou projetos? Me manda uma
