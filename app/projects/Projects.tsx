@@ -7,10 +7,10 @@ export function Projects() {
             <h2 className='mb-6 text-2xl font-semibold'>Projetos</h2>
 
             <div className='grid gap-6 md:grid-cols-2'>
-                {projects.map((p) => (
+                {projects.map((p, index) => (
                     <article
                         key={p.title}
-                        className={`overflow-hidden rounded-xl border bg-slate-900/60 transition hover:border-sky-500 hover:bg-slate-900`}
+                        className={`overflow-hidden rounded-xl border bg-slate-900/60 transition hover:border-sky-500 hover:bg-slate-900 ${index === 0 ? 'md:col-span-2' : 'border-slate-800'}`}
                     >
                         {p.image && (
                             <div className='relative h-40 w-full md:h-44'>
@@ -18,7 +18,7 @@ export function Projects() {
                                     src={p.image}
                                     alt={`Screenshot do projeto ${p.title}`}
                                     fill
-                                    className='object-cover transition-transform duration-500 ease-out hover:scale-105'
+                                    className={`${index === 0 ? '' : 'object-cover'} transition-transform duration-500 ease-out hover:scale-105`}
                                 />
                             </div>
                         )}

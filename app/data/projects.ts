@@ -1,5 +1,19 @@
 export const projects = [
     {
+        title: 'FinTrack',
+        description:
+            'Aplicação full stack de controle financeiro pessoal para registrar entradas e saídas, visualizar saldo e acompanhar gastos por categoria ao longo do tempo.',
+        techs: ['Next.js', 'TypeScript', 'Node.js', 'Express', 'Tailwind CSS'],
+        liveUrl: 'https://fintrack-rho-one.vercel.app/',
+        codeUrl: 'https://github.com/ManzanoW/fintrack',
+        image: '/fintrack1.png',
+        highlights: [
+            'Dashboard com resumo de entradas, saídas e saldo, com filtros por período.',
+            'CRUD de transações com validação, categorização e busca.',
+            'Gráficos de gastos por categoria e evolução mensal usando dados agregados do banco.',
+        ],
+    },
+    {
         title: 'Portfolio Next.js',
         description:
             'Este próprio portfólio, construído com Next.js, TypeScript e Tailwind CSS.',
