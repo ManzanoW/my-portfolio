@@ -10,15 +10,21 @@ export function Projects() {
                 {projects.map((p, index) => (
                     <article
                         key={p.title}
-                        className={`overflow-hidden rounded-xl border bg-slate-900/60 transition hover:border-sky-500 hover:bg-slate-900 ${index === 0 ? 'md:col-span-2' : 'border-slate-800'}`}
+                        className={`overflow-hidden rounded-xl border bg-slate-900/60 transition hover:border-sky-500 hover:bg-slate-900 ${index === 0 ? 'md:col-span-2 md:flex md:flex-row' : 'border-slate-800'}`}
                     >
                         {p.image && (
-                            <div className='relative h-40 w-full md:h-44'>
+                            <div
+                                className={`relative shrink-0 ${
+                                    index === 0
+                                        ? 'h-56 w-full md:h-auto md:w-[45%]'
+                                        : 'h-40 w-full md:h-44'
+                                }`}
+                            >
                                 <Image
                                     src={p.image}
                                     alt={`Screenshot do projeto ${p.title}`}
                                     fill
-                                    className={`${index === 0 ? '' : 'object-cover'} transition-transform duration-500 ease-out hover:scale-105`}
+                                    className='object-cover transition-transform duration-500 ease-out hover:scale-105'
                                 />
                             </div>
                         )}

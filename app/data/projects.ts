@@ -1,5 +1,19 @@
 export const projects = [
     {
+        title: 'Líder Celulares',
+        description:
+            'Landing page profissional desenvolvida para uma assistência técnica autorizada em Santos/SP com mais de 414 avaliações no Google. Foco em conversão via WhatsApp com SEO local completo.',
+        techs: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Lucide React'],
+        liveUrl: 'https://lider-celulares.vercel.app',
+        codeUrl: 'https://github.com/ManzanoW/lider-celulares',
+        image: '/lider-celulares.png',
+        highlights: [
+            'Cards de serviços clicáveis que abrem o WhatsApp com mensagem pré-preenchida por serviço.',
+            'SEO local completo com schema.org LocalBusiness, Open Graph e meta tags otimizadas.',
+            'Botão flutuante de WhatsApp com reposicionamento automático via IntersectionObserver ao chegar no footer.',
+        ],
+    },
+    {
         title: 'FinTrack',
         description:
             'Aplicação full stack de controle financeiro pessoal para registrar entradas e saídas, visualizar saldo e acompanhar gastos por categoria ao longo do tempo.',
@@ -26,6 +40,20 @@ export const projects = [
             'Animações sutis, custom cursor e efeitos de glow sem comprometer performance.',
         ],
         image: '/portfolio.png',
+    },
+    {
+        title: 'Portfólio de Enfermagem – Anna Clara',
+        description:
+            'Site profissional desenvolvido para estudante de Enfermagem na Unisantos e estagiária na Santa Casa de Santos. Foco em destacar trajetória, experiência prática e competências humanas na área da saúde.',
+        techs: ['Next.js', 'TypeScript', 'Tailwind CSS', 'React Hook Form'],
+        liveUrl: 'https://anna-portfolio-tawny.vercel.app/', // ajuste para a URL real
+        codeUrl: 'https://github.com/ManzanoW/anna-portfolio', // ajuste para o repo real
+        image: '/anna-enfermagem.png',
+        highlights: [
+            'Layout single page com navegação por âncoras, otimizando a leitura de recrutadores e profissionais de RH.',
+            'Seções dedicadas à formação, estágio na Santa Casa de Santos e histórico em atendimento ao cliente, evidenciando habilidades transferíveis.',
+            'Design limpo em branco e verde, com foco em acessibilidade e leitura em dispositivos móveis.',
+        ],
     },
     {
         title: 'VitaWave',

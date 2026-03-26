@@ -1,8 +1,15 @@
 export const education = [
     {
         institution: 'Anhanguera Educacional',
+        degree: 'Pós-graduação em Desenvolvimento Full Stack',
+        period: '02/2026 — 09/2026',
+        city: 'EAD',
+        logo: '/anhanguera.ico',
+    },
+    {
+        institution: 'Anhanguera Educacional',
         degree: 'Pós-graduação em Engenharia de Software',
-        period: '2025 — 2026',
+        period: '07/2025 — 02/2026',
         city: 'EAD',
         logo: '/anhanguera.ico',
     },

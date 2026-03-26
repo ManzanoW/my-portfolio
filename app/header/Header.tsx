@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { useState } from 'react'
 
 const sections = [
     { id: 'home', label: 'Início' },
@@ -12,7 +13,10 @@ const sections = [
 ]
 
 export function Header() {
+    const [menuOpen, setMenuOpen] = useState(false)
+
     const handleScroll = (id: string) => {
+        setMenuOpen(false)
         const el = document.getElementById(id)
         if (!el) return
         el.scrollIntoView({ behavior: 'smooth' })
@@ -27,19 +31,63 @@ export function Header() {
                 >
                     JV.dev
                 </Link>
-                <ul className='flex flex-wrap justify-end gap-2 text-xs sm:flex-nowrap sm:gap-4 sm:text-sm'>
-                    {sections.map((s) => (
-                        <li key={s.id}>
-                            <button
-                                onClick={() => handleScroll(s.id)}
-                                className='cursor-none text-slate-300 transition hover:text-sky-400'
-                            >
-                                {s.label}
-                            </button>
-                        </li>
-                    ))}
+
+                <ul className='hidden flex-nowrap gap-4 text-sm sm:flex'>
+                    {sections.map(function (s) {
+                        return (
+                            <li key={s.id}>
+                                <button
+                                    onClick={function () {
+                                        handleScroll(s.id)
+                                    }}
+                                    className='cursor-none text-slate-300 transition hover:text-sky-400'
+                                >
+                                    {s.label}
+                                </button>
+                            </li>
+                        )
+                    })}
                 </ul>
+
+                <button
+                    onClick={function () {
+                        setMenuOpen(!menuOpen)
+                    }}
+                    className='flex cursor-none flex-col justify-center gap-1.5 p-2 sm:hidden'
+                    aria-label='Abrir menu'
+                >
+                    <span
+                        className={`block h-0.5 w-5 origin-center bg-slate-300 transition-transform duration-300 ${menuOpen ? 'translate-y-2 rotate-45' : ''}`}
+                    />
+                    <span
+                        className={`block h-0.5 w-5 bg-slate-300 transition-opacity duration-300 ${menuOpen ? 'opacity-0' : 'opacity-100'}`}
+                    />
+                    <span
+                        className={`block h-0.5 w-5 origin-center bg-slate-300 transition-transform duration-300 ${menuOpen ? '-translate-y-2 -rotate-45' : ''}`}
+                    />
+                </button>
             </nav>
+
+            <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out sm:hidden ${menuOpen ? 'max-h-96 border-t border-slate-800' : 'max-h-0'}`}
+            >
+                <ul className='flex flex-col gap-1 bg-slate-950/95 px-4 py-3'>
+                    {sections.map(function (s) {
+                        return (
+                            <li key={s.id}>
+                                <button
+                                    onClick={function () {
+                                        handleScroll(s.id)
+                                    }}
+                                    className='w-full cursor-none rounded-lg px-3 py-2.5 text-left text-sm text-slate-300 transition-all duration-200 hover:bg-slate-800/60 hover:text-sky-400'
+                                >
+                                    {s.label}
+                                </button>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
         </header>
     )
 }

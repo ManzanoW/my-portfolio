@@ -17,7 +17,10 @@ export default function Home() {
         <div>
             <Header />
             <main className='no-scrollbar mx-auto max-w-5xl px-4'>
-                <section id='home' className='flex min-h-screen items-center'>
+                <section
+                    id='home'
+                    className='flex min-h-[68vh] md:min-h-screen'
+                >
                     <Hero />
                 </section>
                 <DownloadCVButton />
