@@ -20,7 +20,7 @@ export function Hero() {
                         <span className='text-sky-400'>{''}João Vytor</span>
                     </h1>
                     <p className='max-w-xl text-center text-sm text-slate-300 md:text-left md:text-base'>
-                        Construo aplicações web modernas usando React, Next.js e
+                        Construo aplicações web modernas usando React.js, Next.js e
                         TypeScript, focando em performance e boa experiência de
                         usuário.
                     </p>
