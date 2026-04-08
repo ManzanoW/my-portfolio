@@ -65,7 +65,7 @@ body {
     }
 }
 
-/* mobile / dispositivos sem hover: esconde */
+/* mobile / dispositivos sem hover: esconde o cursor */
 @media (hover: none), (pointer: coarse) {
     .custom-cursor {
         display: none;
