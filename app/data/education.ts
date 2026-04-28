@@ -1,5 +1,12 @@
 export const education = [
     {
+        institution: 'Descomplica',
+        degree: 'Graduação em Ciência da Computação',
+        period: '2026 — 2029',
+        city: 'EAD',
+        logo: '/descomplica.png',
+    },
+    {
         institution: 'Anhanguera Educacional',
         degree: 'Pós-graduação em Desenvolvimento Full Stack',
         period: '02/2026 — 09/2026',
